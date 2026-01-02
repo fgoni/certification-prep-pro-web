@@ -154,23 +154,16 @@ const altImg = await getImage({
         </div>
 
         <div class="hero-media">
-          <div class="shot shot--phone" data-shot-wrap>
-            <div class="shot-chrome" aria-hidden="true">
-              <span class="island"></span>
-            </div>
-
-            <div class="shot-body">
-              <img
-                class="shot-img"
-                data-shot
-                src={heroImg.src}
-                width={heroImg.attributes.width}
-                height={heroImg.attributes.height}
-                alt="Certification Prep Pro on iPhone, showing the exam practice home screen."
-                decoding="async"
-                loading="eager"
-              />
-            </div>
+          <div class="shot shot--phone">
+            <img
+              class="shot-img"
+              src={heroImg.src}
+              width={heroImg.attributes.width}
+              height={heroImg.attributes.height}
+              alt="Certification Prep Pro on iPhone, showing the exam practice home screen."
+              decoding="async"
+              loading="eager"
+            />
           </div>
 
           <div class="trust">
@@ -275,21 +268,15 @@ const altImg = await getImage({
         </div>
 
         <div class="shot shot--phoneWide">
-          <div class="shot-chrome" aria-hidden="true">
-            <span class="island"></span>
-          </div>
-
-          <div class="shot-body">
-            <img
-              class="shot-img"
-              src={altImg.src}
-              width={altImg.attributes.width}
-              height={altImg.attributes.height}
-              alt="Certification Prep Pro screenshot."
-              decoding="async"
-              loading="lazy"
-            />
-          </div>
+          <img
+            class="shot-img"
+            src={altImg.src}
+            width={altImg.attributes.width}
+            height={altImg.attributes.height}
+            alt="Certification Prep Pro screenshot."
+            decoding="async"
+            loading="lazy"
+          />
         </div>
       </section>
 

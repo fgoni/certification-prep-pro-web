@@ -306,11 +306,9 @@ html[data-theme="light"] .icon[data-icon="moon"] {
 }
 
 .shot {
-  border-radius: 30px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  box-shadow: var(--shadow);
-  overflow: hidden;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .shot--phone {
@@ -323,55 +321,14 @@ html[data-theme="light"] .icon[data-icon="moon"] {
   margin: 18px auto 48px;
 }
 
-.shot-chrome {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border);
-  background: var(--surface-strong);
-}
-
-.island {
-  width: 96px;
-  height: 24px;
-  border-radius: 99px;
-  background: rgba(15, 21, 36, 0.16);
-  border: 1px solid rgba(15, 21, 36, 0.18);
-  position: relative;
-}
-
-html[data-theme="dark"] .island {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.14);
-}
-
-.island::after {
-  content: "";
-  position: absolute;
-  right: 14px;
-  top: 50%;
-  width: 8px;
-  height: 8px;
-  transform: translateY(-50%);
-  border-radius: 99px;
-  background: rgba(255, 255, 255, 0.22);
-}
-
-.shot-body {
-  position: relative;
-  padding: 0;
-}
-
 .shot-img {
   width: 100%;
   height: auto;
   display: block;
-  background: rgba(0, 0, 0, 0.03);
 }
 
 html[data-theme="dark"] .shot-img {
-  background: rgba(255, 255, 255, 0.04);
+  background: transparent;
 }
 
 .trust {
