@@ -1,0 +1,26 @@
+---
+import BarChart3 from "lucide-static/icons/bar-chart-3.svg?raw";
+import Clock from "lucide-static/icons/clock.svg?raw";
+import Eye from "lucide-static/icons/eye.svg?raw";
+import FileText from "lucide-static/icons/file-text.svg?raw";
+import ListChecks from "lucide-static/icons/list-checks.svg?raw";
+import Moon from "lucide-static/icons/moon.svg?raw";
+import ShieldCheck from "lucide-static/icons/shield-check.svg?raw";
+import Sun from "lucide-static/icons/sun.svg?raw";
+
+const icons = {
+  "bar-chart-3": BarChart3,
+  clock: Clock,
+  eye: Eye,
+  "file-text": FileText,
+  "list-checks": ListChecks,
+  moon: Moon,
+  "shield-check": ShieldCheck,
+  sun: Sun,
+};
+
+const { name } = Astro.props;
+const svg = icons[name] ?? "";
+---
+
+<span set:html={svg} />
