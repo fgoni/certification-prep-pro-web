@@ -64,7 +64,9 @@ body {
   width: 100%;
   max-width: var(--container);
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 0;
+  padding-left: calc(22px + env(safe-area-inset-left));
+  padding-right: calc(22px + env(safe-area-inset-right));
 }
 
 .skip {
@@ -571,6 +573,13 @@ html[data-theme="dark"] .footer-inner {
   .shot--phone {
     margin: 0;
     justify-self: end;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: calc(26px + env(safe-area-inset-left));
+    padding-right: calc(26px + env(safe-area-inset-right));
   }
 }
 
