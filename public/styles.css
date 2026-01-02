@@ -325,6 +325,7 @@ html[data-theme="light"] .icon[data-icon="moon"] {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 20px;
 }
 
 html[data-theme="dark"] .shot-img {
