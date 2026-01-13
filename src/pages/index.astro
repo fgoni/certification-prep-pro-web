@@ -1,5 +1,6 @@
 ---
 import { getImage } from "astro:assets";
+import Analytics from "@vercel/analytics/astro";
 import Icon from "../components/Icon.astro";
 import heroShot from "../assets/app-hero.webp";
 import shotAlt from "../assets/app-shot.webp";
@@ -71,6 +72,8 @@ const altImg = await getImage({
         }
       })();
     </script>
+
+    <Analytics />
 
     <link rel="stylesheet" href="/styles.css" />
   </head>
